@@ -6,13 +6,19 @@
 body {
   background: url(../HTML5Assessment/Image/meetings-bg.jpg);
 }
-.container {
+video {
+  object-fit: cover;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-.container-wrapper {
-  color: #ffffff;
-  background-color: #1f272b;
+img {
+  width: 100%;
 }
 .row {
+  color: #ffffff;
+  background-color: #1f272b;
   display: flex;
   justify-content: space-around;
   gap: 400px;
@@ -23,19 +29,30 @@ body {
   list-style: none;
   gap: 20px;
 }
+
 .container-01 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   color: #ffffff;
-  background-color: #1f272bbf;
-  /* margin-top: 10px; */
-  padding: 50px 35px 50px 0px;
+  /* background-color: #1f272bbf; */
+  background-color: #343a40;
+  gap: 88px;
+  padding: 50px 100px 50px 0px;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+.main-text {
+  padding-top: 0px;
+  font-size: 40px;
+  font-weight: 1000;
 }
 .logo {
   text-decoration: none;
   color: #ffffff;
   font-size: 30px;
   font-weight: 900;
+  padding: 0px 100px 0px 100px;
 }
 .nav {
   display: flex;
@@ -51,13 +68,14 @@ a {
 .page :hover {
   content: counter(UPCOMING MEETINGS);
 }
+
+/*  Section - 01 */
+
 .section-01 {
   color: #ffffff;
-  /* background-color: #343a40; */
   position: relative;
 }
 .text-container {
-  /* text-align: center; */
   padding-left: 100px;
   padding-top: 50px;
 }
@@ -69,11 +87,7 @@ a {
   padding-top: 20px;
   letter-spacing: 1px;
 }
-.main-text {
-  padding-top: 0px;
-  font-size: 40px;
-  font-weight: 1000;
-}
+
 #join {
   color: #ffffff;
   background-color: #dc3547;
@@ -97,7 +111,9 @@ a {
   background-image: url(../HTML5Assessment/Image/service-item-bg.jpg);
   text-align: center;
 }
+
 .first-img {
+  width: 60px;
   padding-top: 40px;
 }
 .textt {
@@ -105,13 +121,16 @@ a {
   padding-bottom: 20px;
   font-size: larger;
 }
+.arrow {
+  font-size: 30px;
+}
 .first-arrow {
   width: 50px;
   height: 50px;
   border-radius: 50px;
   border: none;
   position: absolute;
-  top: 440px;
+  top: 427px;
   left: 75px;
   cursor: pointer;
 }
@@ -121,10 +140,590 @@ a {
   border-radius: 50px;
   border: none;
   position: absolute;
-  top: 440px;
+  top: 427px;
   right: 50px;
   cursor: pointer;
 }
-.arrow {
+
+.last-line {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.box-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.first-box {
+  width: 300px;
+  height: 450px;
+  background-color: #ffffff;
+  color: #1f272b;
+  border-radius: 50px;
+  margin-right: 40px;
+}
+.h2-text {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.first-box p {
+  padding-bottom: 20px;
+  color: #343a40;
+  font-family: sans-serif;
+  padding-left: 48px;
+}
+.box-button {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #a12c2f;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+.second-box {
+  width: 350px;
+  height: 300px;
+}
+.col-25 {
+  height: 150px;
+  background: url(../HTML5Assessment/Image/lecture\ meeting.jpg) no-repeat
+    center center/cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+
+.col-50 {
+  height: 150px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.span-01 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.para {
+  font-size: 13px;
+}
+.lastp {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+  font-family: sans-serif;
+}
+.newMeeting {
+  padding-top: 30px;
+}
+.nov {
+  color: #a12c2f;
+  padding-bottom: 10px;
+}
+.third-box {
+  width: 350px;
+  height: 400px;
+}
+.col-75 {
+  height: 200px;
+  background: url(../HTML5Assessment/Image/lecture\ tech.jpg) no-repeat center
+    center/cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+.col-100 {
+  height: 200px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.span-02 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.lastpp {
+  position: absolute;
+  top: 26px;
+  left: 43px;
+  font-family: sans-serif;
+}
+.online-tech {
+  padding-top: 75px;
+}
+.second-box-container {
+  display: flex;
+  justify-content: right;
+  /* justify-content: center; */
+  gap: 50px;
+  padding-right: 62px;
+  margin-bottom: 80px;
+}
+.first-box-01 {
+  width: 350px;
+  height: 400px;
+}
+.row-25 {
+  height: 200px;
+  background: url(../HTML5Assessment/Image/high\ edu.jpg) no-repeat center
+    center/cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+
+.row-50 {
+  height: 200px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.highEdu {
+  padding-top: 80px;
+}
+.span-03 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.para {
+  font-size: 13px;
+}
+.lastp-01 {
+  position: absolute;
+  top: 26px;
+  left: 38px;
+  font-family: sans-serif;
+}
+.nov {
+  color: #a12c2f;
+  padding-bottom: 10px;
+}
+.second-box-02 {
+  width: 350px;
+  height: 300px;
+}
+.row-75 {
+  height: 150px;
+  background: url(../HTML5Assessment/Image/student\ training.jpg) no-repeat
+    center center/cover;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+.row-100 {
+  height: 150px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.student {
+  padding-top: 40px;
+}
+.span-04 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.lastp-02 {
+  position: absolute;
+  top: 37px;
+  left: 25px;
+  font-family: sans-serif;
+}
+
+/*  Section - 03  */
+
+.container-03 {
+  background: url(../HTML5Assessment/Image/second\ wp.jpg) fixed;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px 30px 80px 30px;
+}
+
+.box-one {
+  width: 550px;
+  height: 700px;
+  color: #ffffff;
+}
+.part-01 {
+  height: 300px;
+  background-color: transparent;
+  /* opacity: 0.5; */
+  margin-bottom: 50px;
+  border: 1px solid white;
+  padding: 40px 20px 40px 20px;
+}
+.htwo {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 25px;
+  font-family: sans-serif;
+}
+.part-01 p {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.first-button {
+  color: #ffffff;
+  background-color: #a12c2f;
+  padding: 15px 25px 15px 25px;
+  border-radius: 22px;
+  border: none;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.part-02 {
+  height: 300px;
+  border: 1px solid #ffffff;
+  padding: 40px 20px 40px 20px;
+}
+.part-02 p {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.box-two {
+  width: 500px;
+  height: 670px;
+  background-color: #ffffff;
+  color: #1f272b;
+  border-radius: 50px;
+}
+
+.text-1 {
+  text-align: center;
+  padding-top: 80px;
+}
+.para-02 {
+  padding: 50px 50px 0px 50px;
+  text-align: center;
+}
+.para-02 p {
+  font-family: sans-serif;
+  font-size: small;
+  padding-bottom: 5px;
+}
+.blue {
+  color: #3cf;
+  font-family: serif;
+}
+.htwo-01 {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: serif;
+  letter-spacing: 0px;
+}
+.htwo-02 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: serif;
+  letter-spacing: 0px;
+  padding-top: 10px;
+}
+.para-03 {
+  text-align: center;
+  padding: 50px 50px 0px 50px;
+}
+
+/*  Section - 04  */
+.container-04 {
+  padding: 50px 100px 50px 100px;
+}
+.htwo-04 {
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.part-container {
+  display: flex;
+  gap: 21px;
+  position: relative;
+  padding-top: 50px;
+}
+.part-04 {
+  width: 250px;
+  height: 300px;
+  background-color: #ffffff;
+  color: #1f272b;
+}
+.p-01 {
+  width: 250px;
+  height: 150px;
+  background: url(../HTML5Assessment/Image/web\ design.jpg) no-repeat center
+    center/cover;
+}
+.p-02 {
+  width: 250px;
+  height: 150px;
+}
+.hfour {
+  text-align: center;
+  padding-top: 30px;
+  letter-spacing: 1px;
+}
+.stars {
+  display: flex;
+  justify-content: space-around;
+}
+.doller-340 {
+  color: #a12c2f;
+  font-weight: bold;
+}
+
+.p-03 {
+  width: 250px;
+  height: 150px;
+  background: url(../HTML5Assessment/Image/visit\ again.jpg) no-repeat center
+    center/cover;
+}
+
+.hfour-01 {
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 1px;
+}
+
+.p-05 {
+  width: 250px;
+  height: 150px;
+  background: url(../HTML5Assessment/Image/responsive\ html.jpg) no-repeat
+    center center/cover;
+}
+.hfour-02 {
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 1px;
+}
+.p-06 {
+  width: 250px;
+  height: 150px;
+  background: url(../HTML5Assessment/Image/download\ free\ css.jpg) no-repeat
+    center center/cover;
+}
+.hfour-03 {
+  text-align: center;
+  padding-top: 30px;
+  letter-spacing: 1px;
+}
+.arrow-01 {
   font-size: 30px;
+}
+.first-arrow-01 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  top: 173px;
+  left: -25px;
+  cursor: pointer;
+}
+.second-arrow-01 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  top: 173px;
+  right: -25px;
+  cursor: pointer;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+/* Section - 05 */
+.container-05 {
+  background: url(../HTML5Assessment/Image/third\ wp.jpg) no-repeat center
+    center/cover;
+  padding: 80px 50px 50px 50px;
+}
+.htwo-05 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.col-main {
+  display: flex;
+  justify-content: space-around;
+  gap: 133px;
+}
+.col-main-01 {
+  display: flex;
+  gap: 50px;
+}
+.hthree {
+  color: #ffffff;
+  padding-top: 10px;
+  font-family: sans-serif;
+}
+.col-para {
+  color: #f5a425;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 40px;
+  padding-top: 20px;
+}
+.col-01 {
+  width: 250px;
+  height: 150px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.col-00 {
+  padding-top: 50px;
+}
+.col-main-02 {
+  padding-top: 100px;
+}
+
+.images {
+  position: relative;
+}
+.image {
+  border-radius: 30px;
+  /* z-index: 0; */
+}
+.pause {
+  position: absolute;
+  top: 160px;
+  left: 215px;
+}
+
+/* Section - 06 */
+
+.container-06 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 0px 100px 0px;
+}
+.container-wrapper-06 {
+  width: 750px;
+  height: 450px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 30px 50px 20px 50px;
+  margin-top: 25px;
+}
+.htwo-06 {
+  padding-bottom: 20px;
+}
+.input-text {
+  display: flex;
+  padding: 30px 0px 30px 0px;
+  justify-content: center;
+  gap: 50px;
+}
+.input-text-01 {
+  width: 186px;
+  height: 40px;
+  border-radius: 30px;
+  padding-left: 10px;
+  border: none;
+  background-color: #f7f7f7;
+}
+#text-area {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.massbtn {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #a12c2f;
+}
+.red-box {
+  width: 300px;
+  height: 500px;
+  background-color: #a12c2f;
+  color: #ffffff;
+  border-radius: 30px;
+}
+.red-box-01 {
+  /* text-align: center; */
+  padding: 30px 100px 30px 50px;
+}
+.red-box-02 {
+  /* text-align: center; */
+  padding: 30px 50px 20px 50px;
+}
+.red-p {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+}
+.red-htwo {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+/*  Footer  */
+
+.footer-text {
+  padding: 100px 0px 100px 0px;
+  color: #ffffff;
+  text-align: center;
+  font-family: sans-serif;
+}
+.footer-text p {
+  padding-bottom: 5px;
 }
