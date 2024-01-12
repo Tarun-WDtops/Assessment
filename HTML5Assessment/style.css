@@ -6,12 +6,16 @@
 body {
   background: url(../HTML5Assessment/Image/meetings-bg.jpg);
 }
-video {
+/* video {
   object-fit: cover;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+} */
+header {
+  background: url(../HTML5Assessment/Image/third\ wp.jpg) no-repeat center
+    center/cover;
 }
 img {
   width: 100%;
@@ -35,7 +39,7 @@ img {
   justify-content: center;
   color: #ffffff;
   /* background-color: #1f272bbf; */
-  background-color: #343a40;
+  background-color: #fafafa26;
   gap: 88px;
   padding: 50px 100px 50px 0px;
   z-index: 1;
@@ -130,7 +134,7 @@ a {
   border-radius: 50px;
   border: none;
   position: absolute;
-  top: 427px;
+  top: 600px;
   left: 75px;
   cursor: pointer;
 }
@@ -140,7 +144,7 @@ a {
   border-radius: 50px;
   border: none;
   position: absolute;
-  top: 427px;
+  top: 600px;
   right: 50px;
   cursor: pointer;
 }
@@ -149,6 +153,7 @@ a {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 30px;
+  color: #ffffff;
 }
 .box-container {
   display: flex;
@@ -392,10 +397,10 @@ a {
 }
 .part-01 {
   height: 300px;
-  background-color: transparent;
+  background-color: #fafafa26;
   /* opacity: 0.5; */
   margin-bottom: 50px;
-  border: 1px solid white;
+
   padding: 40px 20px 40px 20px;
 }
 .htwo {
@@ -419,7 +424,7 @@ a {
 }
 .part-02 {
   height: 300px;
-  border: 1px solid #ffffff;
+  background-color: #fafafa26;
   padding: 40px 20px 40px 20px;
 }
 .part-02 p {
@@ -584,7 +589,7 @@ a {
 /* Section - 05 */
 .container-05 {
   background: url(../HTML5Assessment/Image/third\ wp.jpg) no-repeat center
-    center/cover;
+    center/cover fixed;
   padding: 80px 50px 50px 50px;
 }
 .htwo-05 {
@@ -616,7 +621,8 @@ a {
 .col-01 {
   width: 250px;
   height: 150px;
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
+  background-color: #fafafa26;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 30px;
