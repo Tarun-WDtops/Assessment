@@ -6,16 +6,15 @@
 body {
   background: url(../HTML5Assessment/Image/meetings-bg.jpg);
 }
-/* video {
+video {
   object-fit: cover;
   width: 100%;
+  /* height: 300px; */
   position: fixed;
   top: 0;
-  left: 0;
-} */
+}
 header {
-  background: url(../HTML5Assessment/Image/third\ wp.jpg) no-repeat center
-    center/cover;
+  background: url(../HTML5Assessment/Image/third\ wp.jpg) no-repeat center/cover;
 }
 img {
   width: 100%;
@@ -38,11 +37,10 @@ img {
   display: flex;
   justify-content: center;
   color: #ffffff;
-  /* background-color: #1f272bbf; */
   background-color: #fafafa26;
-  gap: 88px;
-  padding: 50px 100px 50px 0px;
-  z-index: 1;
+  gap: 78px;
+  padding: 50px 60px 50px 30px;
+  /* z-index: 1; */
   position: sticky;
   top: 0;
 }
