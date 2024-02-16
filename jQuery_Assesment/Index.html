@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery Assesment</title>
     <link rel="stylesheet" href="style.css" />
-    <script>
-      function setValue(e, text) {
-        e.preventDefault(); 
-  const inputEl = document.getElementById("first-input");
-  const value = inputEl.getAttribute("value") || "";
-  const newValue = value + text;
-  inputEl.setAttribute("value", newValue);
-}
-    </script>
+
   </head>
   <body>
     
@@ -21,29 +13,29 @@
       <h1>jQuery Assesment</h1>
       <div class="container-wrapper">
         <div class="inputs">
-          <input type="text" id="first-input" placeholder="Text Here" /> <br />
-          <input type="text" id="second-input" placeholder="Total" />
+          <input type="number" id="first-input" placeholder="Text Here" /> <br />
+          <input type="number" id="second-input" placeholder="Total" />
         <!-- </div> -->
         <div class="btn-01">
           <div class="first">
-            <button type="button" onclick="setValue(event, '1')" id="onee">1</button><br />
-            <button type="button" onclick="setValue(event, '4')" id="fourr">4</button><br />
-            <button type="button" onclick="setValue(event, '7')" id="sevenn">7</button><br />
-            <button type="button" onclick="setValue(event, '.')" id="dottt">.</button>
+            <button type="button" onclick="setValueone()" value="1" >1</button><br />
+            <button type="button" onclick="setValuefour()" >4</button><br />
+            <button type="button" onclick="setValueseven()" >7</button><br />
+            <button type="button" onclick="setValuedot()" >.</button>
           </div>
   
           <div class="second">
-            <button type="button" onclick="two()" id="twoo">2</button><br />
-            <button type="button" onclick="five()" id="fivee">5</button><br />
-            <button type="button" onclick="eight()" id="eightt">8</button><br />
-            <button type="button" onclick="zero()" id="zeroo">0</button>
+            <button type="button" onclick="setValuetwo()" >2</button><br />
+            <button type="button" onclick="setValuefive()" >5</button><br />
+            <button type="button" onclick="setValueeight()">8</button><br />
+            <button type="button" onclick="setValuezero()" >0</button>
           </div>
   
           <div class="third">
-            <button type="button" onclick="three()" id="threee">3</button><br />
-            <button type="button" onclick="six()" id="sixx">6</button><br />
-            <button type="button" onclick="nine()" id="ninee">9</button><br />
-            <button type="button" onclick="equal()" id="equall">=</button>
+            <button type="button" onclick="setValuethree()">3</button><br />
+            <button type="button" onclick="setValuesix()" >6</button><br />
+            <button type="button" onclick="setValuenine()">9</button><br />
+            <button type="button" onclick="equal()" >=</button>
           </div>
   
           <div class="last-five">
