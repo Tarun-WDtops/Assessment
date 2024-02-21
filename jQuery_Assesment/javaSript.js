@@ -43,4 +43,30 @@ function setValuedot() {
 
 function del() {
   let a = (document.getElementById("first-input").value = "");
+  let b = (document.getElementById("second-input").value = "");
+}
+
+function division() {
+  let a = parseInt(document.getElementById("first-input").value);
+  let total = a / b;
+  document.getElementById("result").value = total;
+  // parseInt :- text ko integer me convert karta hai
+}
+function multi() {
+  let a = parseInt(document.getElementById("first-input").value);
+  let total = a * b;
+  document.getElementById("result").value = total;
+}
+function min() {
+  let a = parseInt(document.getElementById("first-input").value);
+  let total = a - b;
+  document.getElementById("result").value = total;
+}
+function add() {
+  let a = parseInt(document.getElementById("first-input").value);
+  let b = (document.getElementById("result").value = total);
+}
+function equal() {
+  let a = parseInt(document.getElementById("first-input").value);
+  let total = (document.getElementById("result").value = total);
 }
