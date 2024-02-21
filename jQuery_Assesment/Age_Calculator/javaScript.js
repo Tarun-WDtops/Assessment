@@ -24,9 +24,12 @@ function handleCheckYear() {
 
 function handleInterval() {
   let c = new Date(a.value);
-  let d = parseInt(b.value) - parseInt(a.value);
+  let e = new Date(b.value);
+  // let d = parseInt(b.value) - parseInt(a.value);
+  let d = e.getFullYear() - c.getFullYear();
   console.log(d);
-  document.write(d).getElementById("result").value;
+  // document.write(d).getElementById("result").value = d;
+  document.getElementById("result").value = d;
 }
 // function handleCheck() {
 //   console.log(a);
